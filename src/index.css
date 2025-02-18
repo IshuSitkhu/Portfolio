@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    user-select: none !important; 
+    outline: none !important; 
+  } 
+
+  /* Smooth hover effect */
+.skill-item {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Icons with Neon Glow */
+.skill-icon {
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.3));
+  transition: filter 0.3s ease-in-out;
+}
+
+.skill-item:hover .skill-icon {
+  filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.6));
+}
+
+/* Skills Grid Layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
