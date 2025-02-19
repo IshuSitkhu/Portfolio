@@ -17,7 +17,7 @@ const About = () => {
         {/* Left Side: Larger Photo with Smooth Zoom on Hover */}
         <div className="relative w-72 h-72 rounded-full overflow-hidden shadow-[0_0_25px_rgba(0,150,255,0.6)] border-4 border-blue-500 transition-transform duration-500 hover:scale-110">
           <img
-            src="public/IMG_4646.JPG" 
+            src="./IMG_4646.JPG" 
             alt="Ishu Sitikhu"
             className="w-full h-full object-cover"
           />
